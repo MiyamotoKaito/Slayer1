@@ -34,6 +34,6 @@ protected:
 	 * 主に、敵がコントローラーに依存されている場合に使う関数
 	 */
 	virtual void PossessedBy(AController* NewController) override;
-	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Abilities")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Abilities")
 	EGameplayEffectReplicationMode ReplicationMode = EGameplayEffectReplicationMode:: Mixed;
 };

@@ -55,7 +55,6 @@ void ATestCharacter::PossessedBy(AController* NewController)
 		AbilitySystemComponent->InitAbilityActorInfo(this,this);
 	}
 }
-
 // Called to bind functionality to input
 void ATestCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
