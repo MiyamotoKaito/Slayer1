@@ -16,6 +16,8 @@ ATestCharacter::ATestCharacter()
 	AbilitySystemComponent->SetIsReplicated(true);
 	// 共有するタイプ
 	AbilitySystemComponent->SetReplicationMode(ReplicationMode);
+	// 属性セットをサブオブジェクトとして生成
+	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicSubObjectSet"));
 }
 
 // Called when the game starts or when spawned
