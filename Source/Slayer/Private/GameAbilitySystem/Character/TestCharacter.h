@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
 #include "AbilitySystemComponent.h"
+#include "Slayer/GameAbilitySystem/Attribute/BasicAttributeSet.h"
 #include "TestCharacter.generated.h"
 
 UCLASS()
@@ -23,6 +24,9 @@ public:
 	
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Abilities")
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
+	
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Abilities")
+	TObjectPtr<UBasicAttributeSet> BasicAttributeSet;
 protected:
 
 	virtual void BeginPlay() override;
